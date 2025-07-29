@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ver Registro</title>
+</head>
+<body>
+    <h1>Resultado</h1>
+    {% if reportador %}
+        <p><strong>{{ nombre }}</strong> fue reportado por <strong>{{ reportador }}</strong>.</p>
+    {% else %}
+        <p><strong>{{ nombre }}</strong> no se encuentra en la base de datos.</p>
+    {% endif %}
+    <a href="/">Volver</a>
+</body>
+</html>
